@@ -43,8 +43,14 @@ main {
 }
 
 .fiches {
-	flex: 1;
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne quand l'espace est insuffisant */
+    justify-content: space-between; /* Espacement égal entre les éléments sur la ligne */
 	margin: 8px;
+}
+.fiches article {
+	width: calc(50% - 20px);
+	border: 1px solid black;
 }
 .fiches img {
 	max-width: 200px;
@@ -52,4 +58,7 @@ main {
 .fiches p {
 	margin-top: 4px;
 	margin-bottom: 4px;
+}
+.fiches article h2 {
+	text-align: center;
 }

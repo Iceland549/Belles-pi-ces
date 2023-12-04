@@ -15,10 +15,25 @@
 			<!-- Menu de recherche -->
 			<section class="filtres">
 				<h3>Filtres</h3>
+				<button class="btn-trier">Trier par prix croissant</button>
+				<br>
+				<button class="btn-filtrer">Filtrer les pièces non abordables</button>
+				<br>
+				<button class="btn-decroissant">Filtrer par prix décroissant</button>
+				<br>
+				<button class="btn-nodesc">Filtrer les pièces sans description</button>
+				<br>
+				<input type="range" id="prix-max" min="0" max="60" step="5">
 			</section>
 
 			<!-- Fiches produits -->
 			<section class="fiches">
+				<div class="abordables">
+					<P>Pièces abordables :</P>
+				</div>
+				<div class="disponibles">
+					<P>Pièces disponibles :</P>
+				</div>
 			</section>
 		</main>
 	</body>
